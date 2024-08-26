@@ -1,0 +1,42 @@
+#22nd August, Data types and arrays 
+
+fun main(){
+    var name="""This is my
+    first program 
+    of kotlin"""
+    println(name)
+}
+
+-------------------------------------------------
+
+fun main(){
+    //boolean type
+    var a:Boolean=true
+    println(a)
+}
+
+---------------------------------------------------
+
+fun main(){
+    val numbers=arrayOf(1,2,3,4,5)
+    println(numbers[0])
+    println(numbers[1])
+    println(numbers[2])
+    println(numbers[3])
+    println(numbers[4])
+}
+
+---------------------------------------------------
+
+fun main(){
+    val words: Array<String> =arrayOf("Kotlin","Java","Python")
+    println(words[0])
+}
+
+----------------------------------------------------------------------
+
+fun main(){
+  val numbers=arrayOf(1,2,3,4,5)
+    val size =numbers.size
+    print(size)
+}
