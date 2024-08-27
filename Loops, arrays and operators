@@ -1,0 +1,177 @@
+#26th august, loops and operators
+
+fun main(){
+    var x=5
+    var res=x.shr(2)
+    println(res)
+    println(x.shl(2))
+    
+}
+
+-----------------------------------------------------------------
+
+fun main(){
+    var x: Boolean =true
+    var y: Boolean =false
+    print(x && y)
+    
+}
+
+----------------------------------------------------------------
+
+fun main(){
+    var x=5
+    println(+x)
+    println(-x)
+    println(x++)
+    println(x--)
+}
+
+---------------------------------------------------------------
+
+#elvis operator
+fun main(){
+    var str:String?=null
+    var str2:String="May be declared nullable string"
+    var len1: Int=str ?.length ?: -1
+    var len2: Int=str2 ?.length ?: -1
+    println("Length of the string str is: ${len1}")
+    println("Length of the string str2 is : ${len2}")
+}
+
+-----------------------------------------------------------------
+
+fun main(){
+    var choice=2
+    val res=when(choice){
+        1->"hello"
+        2->"hi"
+        3->"Namaste"
+        4->"Vanakkam"
+        else->"No need"
+    }
+    println(res)
+}
+
+-----------------------------------------------------------------
+
+fun main(){
+    for(i in 1..5){
+        println(i)
+    }
+}
+
+----------------------------------------------------------------
+
+fun main(){
+    for(i in 6 until 10){
+        println(i)
+    }
+} 
+
+-----------------------------------------------------------------
+
+fun main(){
+    for(i in 1..5 step 2){
+        println(i)
+    }
+} 
+
+-----------------------------------------------------------------
+
+fun main(){
+    for(i in 5 downTo 1){
+        println(i)
+    }
+} 
+
+-----------------------------------------------------------------
+
+fun main(){
+    for(i in 5 downTo 1 step 2){
+        println(i)
+    }
+} 
+
+--------------------------------------------------------------
+
+fun main(){
+    var i=1
+    while(i<=5){
+        println(i)
+        i++
+    }
+}
+
+----------------------------------------------------------------
+
+fun main(){
+    var i=5
+    do{
+        println(i)
+        i--
+    }while(i>0)
+}
+
+-----------------------------------------------------------------
+#Arithmetic operators
+fun main() {
+    var a=10
+    var b=11
+    println(a+b)
+    println(a-b)
+    println(a*b)
+	println(a/b)
+    println(a%b)
+    println(a++)
+    println(a)
+    println(b--)
+    println(b)
+}
+
+------------------------------------------------------------------- 
+
+#Assignment operators
+fun main(){
+    var x:Int;
+    x=5
+    x+=2
+    println(x)
+    x-=1
+    println(x)
+    x*=5
+    println(x)
+    x/=2
+    println(x)
+}
+
+-------------------------------------------------------------------
+
+#Logical operators
+fun main(){
+    var x:Int=2
+    var y:Int=3
+    println(x>5&&y<9)
+    println(x>5||y<9)
+    var z = true
+    println(!z)
+}
+
+---------------------------------------------------------------------
+
+#Sum of odd and even numbers in an array using loops
+fun main(){
+    val numbers=arrayOf(1,3,5,7,2,4,6,8)
+    var sum=0
+    var sum1=0
+    for(i in numbers){
+        if(i%2==0){
+            sum+=i
+        }
+        else if(i%2!=0){
+            sum1+=i
+        }
+    }
+    println("Sum of even numbers: $sum")
+    println("Sum of odd numbers: $sum1")
+}
